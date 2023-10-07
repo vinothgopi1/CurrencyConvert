@@ -1,0 +1,54 @@
+
+<html>
+
+<body style="background-color:aquamarine;">
+
+<center>
+<h1>Currency Converter</h1>
+
+
+<form method = 'post', action = 'home'>
+<label for="start_currency">Choose Initial Currency:</label>
+<select name="start_currency" id="start_currency">
+  <option value="USD">USD</option>
+  <option value="EUR">EUR</option>
+  <option value="JPY">JPY</option>
+  <option value="GBP">GBP</option>
+</select>
+
+<br>
+
+
+<label for = "amount">Amount</label>
+<textarea class = "form-control" name = 'amount' id = 'amount'></textarea>
+
+
+
+
+<br style = 'line-height:300px'>
+
+
+<label for="convert_currency">Choose a Currency to Convert To:</label>
+<select name="convert_currency" id="conver_currency">
+  <option value="USD">USD</option>
+  <option value="EUR">EUR</option>
+  <option value="JPY">JPY</option>
+  <option value="GBP">GBP</option>
+</select>
+
+
+<br style = 'line-height:300px'>
+
+
+<input type = 'submit' value = "CONVERT"/>
+</form>
+
+
+
+<h2>Total Amount: {{convert_value}} </h2>
+
+
+
+</center>
+</html>
+
